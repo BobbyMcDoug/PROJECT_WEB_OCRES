@@ -4,6 +4,8 @@ import Profil from './components/Profil';
 import "./App.css";
 import BarChart from "./components/BarChart";
 import ProgressionBar from "./components/ProgressionBar";
+import DoughnutChart from "./components/DoughnutChart";
+import RadarChart from "./components/RadarChart";
 
 const ventes = [
   {
@@ -11,6 +13,7 @@ const ventes = [
     last : 20000,
   },
 ];
+
 
 const profils = [
   {
@@ -60,7 +63,7 @@ class App extends Component {
               <div className="col-md" style={{ backgroundColor: "blue" }}>.</div>
               <div className="col-md" style={{ backgroundColor: "yellow" }}><Profil user= {profils[0]} /></div>
               <div className="col-md" style={{ backgroundColor: "blue" }}>.</div>
-              <div className="col-md" style={{ backgroundColor: "yellow" }}>fefef</div>
+              <div className="chart"><DoughnutChart /></div>
             </div>
 
           </div>
@@ -74,7 +77,7 @@ class App extends Component {
               <div className="col-md" style={{ backgroundColor: "blue" }}>.</div>
               <div className="col-md" style={{ backgroundColor: "yellow" }}><ProgressionBar user= {ventes[0]}/></div>
               <div className="col-md" style={{ backgroundColor: "blue" }}>.</div>
-              <div className="col-md" style={{ backgroundColor: "yellow" }}>ejdfn,sm<br /> ebdhslk</div>
+              <div className="chart"><RadarChart /></div>
             </div>
           </div>
         </div>
