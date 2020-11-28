@@ -7,8 +7,8 @@ function DoughnutChart() {
         labels: ['Books', 'Food', 'Electronic', 'Houses', 'Cars'],
         datasets: [
             {
-                label: 'Sales for 2020 (M €)',
-                data: [5, 10, 12, 4, 2],
+                label: 'Stock produit 2020 (%)',
+                data: [23, 17, 19, 40, 65],
                 backgroundColor: [
                     'rgba(255, 99, 132, 1)',
                     'rgba(255, 205, 86, 1)',
