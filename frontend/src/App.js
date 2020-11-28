@@ -1,26 +1,59 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import "./App.css";
+
+
+
+
+console.log(window.location.pathname); //si on peut voir l'url en haut
+var id =
+  window.location.pathname[1] === undefined ? 0 : window.location.pathname[1];
+console.log("id: ", id);
+class App extends Component {
+  constructor(props) {
+    super(props);
+
+  }
+
+  render() {
+    return (
+      <div className="container-fluid">
+        <div className="row" style={{ width: "100%" }}>
+          <div className="col-sm" style={{ backgroundColor: "blue" }}>
+            <div className="container" style={{ backgroundColor: "blue" }}>
+              <div className="col-md" style={{ backgroundColor: "blue" }}>.</div>
+              <div className="col-md" style={{ backgroundColor: "yellow" }}>ejdfn,sm<br /> ebdhslk</div>
+              <div className="col-md" style={{ backgroundColor: "blue" }}>.</div>
+              <div className="col-md" style={{ backgroundColor: "yellow" }}>ejdfn,sm<br /> ebdhslk</div>
+            </div>
+          </div>
+
+          <div className="col-sm-5" style={{ backgroundColor: "green" }}>
+            <div className="container" style={{ backgroundColor: "blue" }}>
+              <div className="col-md" style={{ backgroundColor: "blue" }}>.</div>
+              <div className="col-md" style={{ backgroundColor: "yellow" }}>ejdfn,sm<br /> ebdhslk</div>
+              <div className="col-md" style={{ backgroundColor: "blue" }}>.</div>
+              <div className="col-md" style={{ backgroundColor: "yellow" }}>ejdfn,sm<br /> ebdhslk</div>
+            </div>
+
+          </div>
+          <div className="col-sm" style={{ backgroundColor: "pink" }}>
+            <div className="container" style={{ backgroundColor: "blue" }}>
+              <div className="container row" style={{ backgroundColor: "pink" }}>
+                <div className="col-md-7" style={{ backgroundColor: "yellow" }}>e</div>
+                <div className="col-md" style={{ backgroundColor: "yellow" }}> <a href="/admin">Admin</a></div>
+              </div>
+              <div className="col-md" style={{ backgroundColor: "yellow" }}>ejdfn,sm<br /> ebdhslk</div>
+              <div className="col-md" style={{ backgroundColor: "blue" }}>.</div>
+              <div className="col-md" style={{ backgroundColor: "yellow" }}>ejdfn,sm<br /> ebdhslk</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    );
+  }
 }
 
 export default App;
