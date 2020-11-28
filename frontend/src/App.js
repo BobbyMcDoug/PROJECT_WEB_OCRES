@@ -1,24 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import LineChart from './components/LineChart';
+
+const profils = [
+  {
+    nom: "Milecki",
+    prenom: "Jeremy",
+    date_naiss: "13 Novembre",
+    couleur: "red",
+  },
+  {
+    nom: "Bourgeois",
+    prenom: "Antoine",
+    date_naiss: "25 Decembre",
+    couleur: "blue",
+  },
+];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='chart'>
+        <LineChart />
+      </div>
     </div>
   );
 }
