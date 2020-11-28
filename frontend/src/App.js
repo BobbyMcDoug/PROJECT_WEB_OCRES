@@ -3,6 +3,14 @@ import LineChart from './components/LineChart';
 import Profil from './components/Profil';
 import "./App.css";
 import BarChart from "./components/BarChart";
+import ProgressionBar from "./components/ProgressionBar";
+
+const ventes = [
+  {
+    vente : 11500,
+    last : 20000,
+  },
+];
 
 const profils = [
   {
@@ -52,7 +60,7 @@ class App extends Component {
               <div className="col-md" style={{ backgroundColor: "blue" }}>.</div>
               <div className="col-md" style={{ backgroundColor: "yellow" }}><Profil user= {profils[0]} /></div>
               <div className="col-md" style={{ backgroundColor: "blue" }}>.</div>
-              <div className="col-md" style={{ backgroundColor: "yellow" }}>ejdfn,sm<br /> ebdhslk</div>
+              <div className="col-md" style={{ backgroundColor: "yellow" }}>fefef</div>
             </div>
 
           </div>
@@ -62,12 +70,13 @@ class App extends Component {
                 <div className="col-md-7" style={{ backgroundColor: "yellow" }}>e</div>
                 <div className="col-md" style={{ backgroundColor: "yellow" }}> <a href="/admin">Admin</a></div>
               </div>
-              <div className="col-md" style={{ backgroundColor: "yellow" }}>ejdfn,sm<br /> ebdhslk</div>
+              <div className="col-md" style={{ backgroundColor: "yellow" }}> </div>
+              <div className="col-md" style={{ backgroundColor: "blue" }}>.</div>
+              <div className="col-md" style={{ backgroundColor: "yellow" }}><ProgressionBar user= {ventes[0]}/></div>
               <div className="col-md" style={{ backgroundColor: "blue" }}>.</div>
               <div className="col-md" style={{ backgroundColor: "yellow" }}>ejdfn,sm<br /> ebdhslk</div>
             </div>
           </div>
-
         </div>
       </div>
 

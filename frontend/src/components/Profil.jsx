@@ -6,14 +6,9 @@ class Profil extends React.Component  {
     constructor(props){
         super(props);
         this.state = {couleur : this.props.user.couleur};
-        this.state = {jaime : this.props.user.jaime};
         this.changerdeStyle=this.changerdeStyle.bind(this);
-        this.compteur=this.compteur.bind(this);
     }
-    compteur () {
-        this.props.user.jaime = this.props.user.jaime+1;
-        this.setState({jaime : this.props.user.jaime});
-    }
+
     changerdeStyle () {
     var randomColor = require('randomcolor');
     this.props.user.couleur=randomColor();
