@@ -22,7 +22,7 @@ function BarChart() {
                     'rgba(255, 206, 86, 0.2)',
                     'rgba(255, 206, 86, 0.2)',
                     'rgba(255, 206, 86, 0.2)'
-                ],
+                ]
             },
             {
                 label: 'Sales for 2019 (M €)',

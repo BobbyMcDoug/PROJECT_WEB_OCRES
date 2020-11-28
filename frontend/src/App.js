@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import LineChart from './components/LineChart';
 import "./App.css";
 import BarChart from "./components/BarChart";
+import DoughnutChart from "./components/DoughnutChart";
 
 const profils = [
   {
@@ -47,7 +48,7 @@ class App extends Component {
               <div className="col-md" style={{ backgroundColor: "blue" }}>.</div>
               <div className="col-md" style={{ backgroundColor: "yellow" }}>ejdfn,sm<br /> ebdhslk</div>
               <div className="col-md" style={{ backgroundColor: "blue" }}>.</div>
-              <div className="col-md" style={{ backgroundColor: "yellow" }}>ejdfn,sm<br /> ebdhslk</div>
+              <div className="chart"><DoughnutChart /></div>
             </div>
 
           </div>
