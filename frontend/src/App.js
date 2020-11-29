@@ -6,6 +6,7 @@ import BarChart from "./components/BarChart";
 import ProgressionBar from "./components/ProgressionBar";
 import DoughnutChart from "./components/DoughnutChart";
 import RadarChart from "./components/RadarChart";
+import Admin from "./components/Admin";
 
 const ventes = [
   {
@@ -61,8 +62,8 @@ class App extends Component {
 
           <div className="col-sm" style={{ backgroundColor: "white" }}>
             <div className="container" style={{ backgroundColor: "white" }}>
-              <div className="col-md" style={{ backgroundColor: "white" }}>.</div>
               <div className="col-md" style={{ backgroundColor: "white" }}><Profil user= {profils[1]} /></div>
+              <div className="col-md" style={{ backgroundColor: "white" }}></div>
               <div className="col-md" style={{ backgroundColor: "white" }}><ProgressionBar user= {ventes[0]}/></div>
              
             </div>
@@ -75,7 +76,7 @@ class App extends Component {
                 <div className="col-md" style={{ backgroundColor: "white" }}> </div>
               </div>
               <div className="col-md" style={{ backgroundColor: "white" }}> </div>
-              <div className="col-md" style={{ backgroundColor: "white" }}></div>
+              <div className="col-md" style={{ backgroundColor: "white" }}><Admin user={profils[1]}/></div>
               <div className="col-md" style={{ backgroundColor: "white" }}></div>
               <div className="col-md" style={{ backgroundColor: "white" }}><RadarChart /></div>
             </div>

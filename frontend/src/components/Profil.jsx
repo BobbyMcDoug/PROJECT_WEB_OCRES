@@ -41,7 +41,7 @@ render(){
                     <div class="col-sm-10">
                     <p></p>
                     </div>
-                    <div class="col-sm-2">
+                    <div class="col-sm">
                         <a><input type="button" value="Change Style" onClick={this.changerdeStyle}></input></a>
                     </div>
                 </div>
