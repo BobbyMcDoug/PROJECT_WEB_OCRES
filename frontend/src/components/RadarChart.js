@@ -4,18 +4,18 @@ import { Radar } from 'react-chartjs-2'
 function RadarChart() {
 
     const data = {
-        labels: ['Jan', 'Mar', 'May', 'Juil', 'Sep', 'Nov'],
+        labels: ['Marketing', 'Sponsor', 'Evenements', 'Recherche', 'Maintenance', 'Recrutement'],
         datasets: [
             {
-                label: 'Chiffre daffaire mensuel 2020 (M)',
-                data: [85, 75, 85, 45, 25, 85],
+                label: 'Budget 2020 (1000€)',
+                data: [25, 15, 8, 65, 40, 10],
                 backgroundColor: 'rgba(0, 255, 0, 0.1)',
                 borderColor: '#00FF00',
                 borderWidth: 2
             },
             {
-                label: 'Chiffre daffaire mensuel 2019 (M)',
-                data: [70, 90, 65, 55, 35, 85],
+                label: 'Budget  2019 (1000€)',
+                data: [40, 20, 25, 35, 35, 45],
                 backgroundColor: 'rgba(0, 255, 255, 0.1)',
                 borderColor: '#00FFFF',
                 borderWidth: 2
@@ -33,7 +33,7 @@ function RadarChart() {
             },
             ticks: {
                 suggestedMin: 0,
-                suggestedMax: 100
+                suggestedMax: 50
             }
         }
     }
