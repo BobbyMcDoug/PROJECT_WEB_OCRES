@@ -1,6 +1,9 @@
 import React from "react";
+import ProgressBar from "./ProgressBar";
 
-
+const testData = [
+    { bgcolor: "#6a1b9a", completed: 60 },
+];
 
 class ProgressionBar extends React.Component {
     constructor(props) {
@@ -18,7 +21,7 @@ class ProgressionBar extends React.Component {
                         </div>
                         <div class="progress mb-3">
                             <div class="progress-bar" role="progressbar" aria-valuenow="11500" aria-valuemin="0" aria-valuemax="20000"></div>
-                            
+
                         </div>
                     </div>
                     <div class="row" style={{ marginTop: "10%" }}>
@@ -28,10 +31,15 @@ class ProgressionBar extends React.Component {
                         </div>
                         <div class="progress mb-3">
                             <div class="progress-bar" role="progressbar" aria-valuenow="11500" aria-valuemin="0" aria-valuemax="20000"></div>
-                            
+
                         </div>
 
                     </div>
+                    <div className="App">
+                            {testData.map((item, idx) => (
+                                <ProgressBar key={idx} bgcolor={item.bgcolor} completed={item.completed} />
+                            ))}
+                        </div>
 
 
                 </div>
