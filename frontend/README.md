@@ -7,7 +7,7 @@ Grâce à celle-ci, nous pourrons analyser nos résultats et augmenter nos perfo
 
 ### Suivre l'évolution de la gestion de notre projet 
 
-* [Trello](https://trello.com/b/ooc3BrmR/frontend) - Editeur de textes
+* [Trello](https://trello.com/b/ooc3BrmR/frontend) - Outil de gestion de projet
 
 ### Pré-requis
 ### Installation
