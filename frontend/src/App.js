@@ -28,7 +28,7 @@ const profils = [
     nom: "Bourgeois",
     prenom: "Antoine",
     date_naiss: "25 Decembre",
-    photo_prof: "Bulbi.png",
+    photo_prof: "Sala.png",
     couleur: "blue",
     jaime : 0,
   },
@@ -49,35 +49,35 @@ class App extends Component {
     return (
       <div className="container-fluid">
         <div className="row" style={{ width: "100%" }}>
-          <div className="col-sm" style={{ backgroundColor: "blue" }}>
-            <div className="container" style={{ backgroundColor: "blue" }}>
-              <div className="col-md" style={{ backgroundColor: "blue" }}>.</div>
-              <div className="chart"><LineChart /></div>
-              <div className="col-md" style={{ backgroundColor: "blue" }}>.</div>
-              <div className="chart"><BarChart /></div>
+          <div className="col-sm" style={{ backgroundColor: "white" }}>
+            <div className="container" style={{ backgroundColor: "white" }}>
+              <div className="col-md" style={{ backgroundColor: "white" }}><a href="/admin">Admin</a><LineChart /></div>
+              
+              <div className="col-md" style={{ backgroundColor: "white" }}><BarChart /></div>
+              <div className="col-md" style={{ backgroundColor: "white" }}><DoughnutChart/></div>
+              
             </div>
           </div>
 
-          <div className="col-sm" style={{ backgroundColor: "green" }}>
-            <div className="container" style={{ backgroundColor: "blue" }}>
-              <div className="col-md" style={{ backgroundColor: "blue" }}>.</div>
-              <div className="col-md" style={{ backgroundColor: "yellow" }}><Profil user= {profils[0]} /></div>
-              <div className="col-md" style={{ backgroundColor: "blue" }}>.</div>
-              <div className="chart"><DoughnutChart /></div>
+          <div className="col-sm" style={{ backgroundColor: "white" }}>
+            <div className="container" style={{ backgroundColor: "white" }}>
+              <div className="col-md" style={{ backgroundColor: "white" }}>.</div>
+              <div className="col-md" style={{ backgroundColor: "white" }}><Profil user= {profils[1]} /></div>
+              <div className="col-md" style={{ backgroundColor: "white" }}><ProgressionBar user= {ventes[0]}/></div>
+             
             </div>
 
           </div>
-          <div className="col-sm" style={{ backgroundColor: "pink" }}>
-            <div className="container" style={{ backgroundColor: "blue" }}>
-              <div className="container row" style={{ backgroundColor: "pink" }}>
-                <div className="col-md-7" style={{ backgroundColor: "yellow" }}>e</div>
-                <div className="col-md" style={{ backgroundColor: "yellow" }}> <a href="/admin">Admin</a></div>
+          <div className="col-sm" style={{ backgroundColor: "white" }}>
+            <div className="container" style={{ backgroundColor: "white" }}>
+              <div className="container row" style={{ backgroundColor: "white" }}>
+                
+                <div className="col-md" style={{ backgroundColor: "white" }}> </div>
               </div>
-              <div className="col-md" style={{ backgroundColor: "yellow" }}> </div>
-              <div className="col-md" style={{ backgroundColor: "blue" }}>.</div>
-              <div className="col-md" style={{ backgroundColor: "yellow" }}><ProgressionBar user= {ventes[0]}/></div>
-              <div className="col-md" style={{ backgroundColor: "blue" }}>.</div>
-              <div className="chart"><RadarChart /></div>
+              <div className="col-md" style={{ backgroundColor: "white" }}> </div>
+              <div className="col-md" style={{ backgroundColor: "white" }}></div>
+              <div className="col-md" style={{ backgroundColor: "white" }}></div>
+              <div className="col-md" style={{ backgroundColor: "white" }}><RadarChart /></div>
             </div>
           </div>
         </div>

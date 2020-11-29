@@ -14,17 +14,14 @@ class ProgressionBar extends React.Component {
     render() {
         return (
             <div class="container-fluid">
-                <div class="container-fluid" style={{ height: "100%", width: "100%", backgroundColor: "pink" }}>
+                <div class="container-fluid" style={{ height: "100%", width: "100%", backgroundColor: "#CFD1A5" }}>
                     <div class="row" >
                         <div class="col-sm" >
                             <h1>Monthly Sale</h1>
-                        </div>
-                        <div class="progress mb-3">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="11500" aria-valuemin="0" aria-valuemax="20000"></div>
-
+                        
                         </div>
                     </div>
-                    <div class="row" style={{ marginTop: "10%" }}>
+                    <div class="row" >
                         <div class="col-sm-6" style={{ margin: "auto" }}>
                             <p>Today :</p>
                             <h1> {this.props.user.vente}</h1>

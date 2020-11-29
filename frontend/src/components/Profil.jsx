@@ -20,7 +20,7 @@ render(){
     <div class="container-fluid" style={{height : "100%", width :"100%", backgroundColor :  this.props.user.couleur}}>
                 <div class="row" >
                     <div class="col-sm" >
-                        <img  src={this.props.user.photo_prof} style={{height : "100%", width :"50%"}}></img>
+                        <img  src={this.props.user.photo_prof} style={{height : "100%", width :"30%"}}></img>
                     </div>
                 </div>
                 <div class="row" style = {{marginTop : "10%"}}>
