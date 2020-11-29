@@ -5,6 +5,9 @@
 Ce projet consiste à réaliser un page web afin de receuillir les données importantes à notre entreprise.
 Grâce à celle-ci, nous pourrons analyser nos résultats et augmenter nos performance de manière durable. 
 
+### Suivre l'évolution de la gestion de notre projet 
+
+* [Trello](https://trello.com/b/ooc3BrmR/frontend) - Editeur de textes
 
 ### Pré-requis
 ### Installation
