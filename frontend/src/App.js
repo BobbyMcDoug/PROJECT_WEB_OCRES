@@ -7,6 +7,8 @@ import ProgressionBar from "./components/ProgressionBar";
 import DoughnutChart from "./components/DoughnutChart";
 import RadarChart from "./components/RadarChart";
 import Admin from "./components/Admin";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter as Router, Route} from "react-router-dom";
 
 const ventes = [
   {
