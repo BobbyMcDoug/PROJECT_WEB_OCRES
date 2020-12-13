@@ -49,7 +49,7 @@ function BarChart() {
 
         title: {
             display: true,
-            text: 'Bar Chart'
+            text: 'Ventes 2019 vs 2020 par produit'
         },
         scales: {
             yAxes: [

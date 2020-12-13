@@ -28,7 +28,7 @@ function LineChart() {
     const options = {
         title: {
             display: true,
-            text: 'Line Chart'
+            text: 'Ventes sur lannée 2019 vs 2020'
         },
         scales: {
             yAxes: [

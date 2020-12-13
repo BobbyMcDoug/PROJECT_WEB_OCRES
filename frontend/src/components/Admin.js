@@ -37,7 +37,8 @@ class Admin extends React.Component {
                             <p></p>
                             </div>
                             <div class="col-sm">
-                                <a><input type="button" value="Submit" onClick={this.BarChart}></input></a>
+                                <a><input type="button" value="Submit" onClick=
+                                {this.BarChart}></input></a>
                             </div>
                         </div>
                         <br></br>
