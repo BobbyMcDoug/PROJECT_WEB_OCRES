@@ -10,7 +10,7 @@ export default class NavbarAdmin extends Component {
         <div className="collpase navbar-collapse">
         <ul className="navbar-nav mr-auto">
           <li className="navbar-item">
-          <Link to="/admin" className="nav-link">Creation</Link>
+          <Link to="/Ajouter" className="nav-link">Creation</Link>
           </li>
           <li className="navbar-item">
           <Link to="/admin" className="nav-link">Recherche</Link>
