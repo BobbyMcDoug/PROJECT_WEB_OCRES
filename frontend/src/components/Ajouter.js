@@ -25,11 +25,7 @@ class Ajouter extends React.Component {
     onChangeId(e)
     {
         this.setState({
-            nom: e.target.value,
-            prenom: e.target.value,
-            date_naiss: e.target.value,
-            photo_prof: e.target.value,
-            couleur: e.target.value
+            id: e.target.value
         })
     }
 
