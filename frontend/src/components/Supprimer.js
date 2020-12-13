@@ -4,49 +4,58 @@ import axios from 'axios';
 
 class Supprimer extends React.Component {
 
+    /// Constructeur
+    constructor(props) {
+        super(props)
 
-    state = {
-        data: [],
-        id:null,
-        nom: null,
-        desc: null,
-        image: null,
-        idToDelete: 0,
-     
-      };
+        /// this.state attributes
+        this.state = {  
+        id:0,
+
+        };
+
+        // Binding
+        this.onSubmitDelete = this.onSubmitDelete.bind(this)
+        this.onChangeId = this.onChangeId.bind(this)
+    }
+
+
+    /// Methods
+    onChangeId(e)
+    {
+        this.setState({
+            id: e.target.value
+        })
+    }
 
     onSubmitDelete(e) {
-        const stickynote = {
-        title: this.state.title,
-        notes: this.state.notes,
-        }
-        console.log(stickynote);
-        const url = 'http://localhost:5000/profils/' + this.state.id;
+        console.log(this.state.id);
+        const url = 'http://localhost:5000/profil/' + this.state.id;
         axios.delete(url)
-        .then(res => {
-        console.log(res.data)
-        });
+            .then(res => {
+                console.log(res.data)
+            });
         window.location = '/';
-        
-        } 
+
+    }
     render() {
-        return(
-            
+        return (
+
 
 
             <form onSubmit={this.onSubmitDelete}>
-            <div className="form-group">
-                <label> _id </label>
-                <input type="text"
-                    required
-                    className="form-control"
-                    value={this.state.id}
-                    onChange={this.onChangeId}
-                />
-            </div>
-            <a><input type="button" value="Submit" ></input></a>
+                <div className="form-group">
+                    <label> _id </label>
+                    <input type="text"
+                        required
+                        className="form-control"
+                        value={this.state.id}
+                        onChange={this.onChangeId}
+                    />
+                </div>
+                <a><input type="submit" value="Supp" className="btn btn-danger btn-block" ></input></a>
             </form>
-    
+
         );
     }
 }
