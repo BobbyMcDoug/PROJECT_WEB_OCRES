@@ -100,7 +100,7 @@ class Ajouter extends React.Component {
                     <label> couleur </label>
                     <input type="text" required className="form-control" value={this.state.couleur} onChange={this.onChangeCouleur} />
                 </div>
-                <a><input type="submit" value="Ajouter" className="btn btn-danger btn-block" ></input></a>
+                <a><input type="submit" value="Modifier" className="btn btn-danger btn-block" ></input></a>
             </form>
 
         );
