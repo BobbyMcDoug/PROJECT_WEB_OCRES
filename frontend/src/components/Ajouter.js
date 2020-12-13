@@ -10,6 +10,7 @@ class Ajouter extends React.Component {
 
         /// this.state attributes
         this.state = {
+            id:0,
             nom:"",
             prenom:"",
             date_naiss:"",
@@ -19,6 +20,7 @@ class Ajouter extends React.Component {
 
         // Binding
         this.onSubmitAdd = this.onSubmitAdd.bind(this)
+
         //this.onChangeId = this.onChangeId.bind(this)
     }
 
@@ -28,15 +30,46 @@ class Ajouter extends React.Component {
             id: e.target.value
         })
     }
+    onChangeNom(e)
+    {
+        this.setState({
+            nom: e.target.value
+        })
+    }
+    onChangePrenom(e)
+    {
+        this.setState({
+            prenom: e.target.value
+        })
+    }
+    onChangeDate(e)
+    {
+        this.setState({
+            date_naiss: e.target.value
+        })
+    }
+    onChangePhoto(e)
+    {
+        this.setState({
+            photo_prof: e.target.value
+        })
+    }
+    onChangeCouleur(e)
+    {
+        this.setState({
+            couleur: e.target.value
+        })
+    }
 
     onSubmitAdd(e) {
         const url = 'http://localhost:5000/profil/add';
         axios.post('/profil', {
-            nom: '',
-            prenom: '',
-            date_naiss: '',
-            photo_prof: '',
-            couleur: ''
+            
+            nom: this.state.nom,
+            prenom: this.state.prenom,
+            date_naiss: this.state.date_naiss,
+            photo_prof: this.state.photo_prof,
+            couleur: this.state.couleur,
 
           })
           .then(function (response) {
