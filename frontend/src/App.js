@@ -7,6 +7,7 @@ import Dashboard from "./components/Dashboard";
 import Navbar from "./components/Navbar";
 import Admin from "./components/Admin";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Supprimer from "./components/Supprimer";
 
 
 
@@ -32,6 +33,7 @@ class App extends Component {
       <br/>
       <Route path="/" exact component={Dashboard}/>
       <Route path="/Admin" component={Admin}/>
+      <Route path="/Supprimer" component={Supprimer}/>
       </div>
  
 </Router>

@@ -16,7 +16,7 @@ export default class NavbarAdmin extends Component {
           <Link to="/admin" className="nav-link">Recherche</Link>
           </li>
           <li className="navbar-item">
-          <Link to="/admin" className="nav-link">Suppression</Link>
+          <Link to="/Supprimer" className="nav-link">Suppression</Link>
           </li>
           <li className="navbar-item">
           <Link to="/admin" className="nav-link">Mise à jour</Link>
