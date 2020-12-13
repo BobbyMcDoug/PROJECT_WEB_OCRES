@@ -66,7 +66,7 @@ class Ajouter extends React.Component {
     }
 
     onSubmitAdd(e) {
-        const url = 'http://localhost:5000/profil/add';
+        const url = 'http://localhost:5000/profil/update/' + this.state.id;
         axios.post( url, {
             
             nom: this.state.nom,
