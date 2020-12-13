@@ -1,12 +1,15 @@
 import React from "react";
+import NavbarAdmin from "./NavbarAdmin";
+
 class Admin extends React.Component {
 
     render() {
         return(
             <div class="container-fluid">
+                <NavbarAdmin/>
             <div class="container-fluid" style={{height : "100%", width :"100%", backgroundColor :  "red"}}>
 
-                        <div class="row" style = {{marginTop : "10%"}}>
+                        <div class="row" >
                         <div class="col-sm-12" style = {{margin : "auto"}}>
                             <p>Nom : </p>
                             <input type="text" placeholder="Entrer le nom de l'item" ></input>

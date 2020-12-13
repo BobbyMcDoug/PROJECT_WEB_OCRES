@@ -1,39 +1,14 @@
 import React, { Component } from "react";
-import LineChart from './components/LineChart';
-import Profil from './components/Profil';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+
 import "./App.css";
-import BarChart from "./components/BarChart";
-import ProgressionBar from "./components/ProgressionBar";
-import DoughnutChart from "./components/DoughnutChart";
-import RadarChart from "./components/RadarChart";
+
+import Dashboard from "./components/Dashboard";
+import Navbar from "./components/Navbar";
 import Admin from "./components/Admin";
 
-const ventes = [
-  {
-    vente : 11500,
-    last : 20000,
-  },
-];
 
 
-const profils = [
-  {
-    nom: "Milecki",
-    prenom: "Jeremy",
-    date_naiss: "13 Novembre",
-    photo_prof: "Bulbi.png",
-    couleur: "red",
-    jaime : 0,
-  },
-  {
-    nom: "Bourgeois",
-    prenom: "Antoine",
-    date_naiss: "25 Decembre",
-    photo_prof: "Sala.png",
-    couleur: "blue",
-    jaime : 0,
-  },
-];
 
 
 console.log(window.location.pathname); //si on peut voir l'url en haut
@@ -48,42 +23,16 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container-fluid">
-        <div className="row" style={{ width: "100%" }}>
-          <div className="col-sm" style={{ backgroundColor: "white" }}>
-            <div className="container" style={{ backgroundColor: "white" }}>
-              <div className="col-md" style={{ backgroundColor: "white" }}><a href="/admin">Admin</a><LineChart /></div>
-              
-              <div className="col-md" style={{ backgroundColor: "white" }}><BarChart /></div>
-              <div className="col-md" style={{ backgroundColor: "white" }}><DoughnutChart/></div>
-              
-            </div>
-          </div>
 
-          <div className="col-sm" style={{ backgroundColor: "white" }}>
-            <div className="container" style={{ backgroundColor: "white" }}>
-              <div className="col-md" style={{ backgroundColor: "white" }}><Profil user= {profils[1]} /></div>
-              <div className="col-md" style={{ backgroundColor: "white" }}></div>
-              <div className="col-md" style={{ backgroundColor: "white" }}><ProgressionBar user= {ventes[0]}/></div>
-             
-            </div>
-
-          </div>
-          <div className="col-sm" style={{ backgroundColor: "white" }}>
-            <div className="container" style={{ backgroundColor: "white" }}>
-              <div className="container row" style={{ backgroundColor: "white" }}>
-                
-                <div className="col-md" style={{ backgroundColor: "white" }}> </div>
-              </div>
-              <div className="col-md" style={{ backgroundColor: "white" }}> </div>
-              <div className="col-md" style={{ backgroundColor: "white" }}><Admin user={profils[1]}/></div>
-              <div className="col-md" style={{ backgroundColor: "white" }}></div>
-              <div className="col-md" style={{ backgroundColor: "white" }}><RadarChart /></div>
-            </div>
-          </div>
-        </div>
+     <Router>
+      <div className="container-fluid"> 
+      <Navbar/>
+      <br/>
+      <Route path="/" exact component={Dashboard}/>
+      <Route path="/Admin" component={Admin}/>
       </div>
-
+ 
+</Router>
     );
   }
 }
