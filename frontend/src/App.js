@@ -6,6 +6,8 @@ import "./App.css";
 import Dashboard from "./components/Dashboard";
 import Navbar from "./components/Navbar";
 import Admin from "./components/Admin";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter as Router, Route} from "react-router-dom";
 
 
 
