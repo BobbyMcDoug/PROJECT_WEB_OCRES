@@ -1,4 +1,5 @@
 import React from "react";
+import axios from 'axios';
 
 
 
@@ -14,6 +15,9 @@ class Profil extends React.Component  {
     this.props.user.couleur=randomColor();
     this.setState({couleur : this.props.user.couleur});
 }
+    /*axios.get('http://localhost:5000/users/')
+    .then(res => console.log(res.data));*/
+
 render(){
     return(
     <div class="container-fluid">

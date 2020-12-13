@@ -1,5 +1,6 @@
 import React from 'react'
 import { Doughnut } from 'react-chartjs-2'
+import axios from 'axios';
 
 function DoughnutChart() {
 

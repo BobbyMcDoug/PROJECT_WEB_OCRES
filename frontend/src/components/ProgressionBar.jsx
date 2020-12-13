@@ -1,5 +1,6 @@
 import React from "react";
 import ProgressBar from "./ProgressBar";
+import axios from 'axios';
 
 const testData = [
     { bgcolor: "#6a1b9a", completed: 60 },
