@@ -11,9 +11,7 @@ class Supprimer extends React.Component {
         /// this.state attributes
         this.state = {  
         id:0,
-
         };
-
         // Binding
         this.onSubmitDelete = this.onSubmitDelete.bind(this)
         this.onChangeId = this.onChangeId.bind(this)
