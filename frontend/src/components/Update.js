@@ -19,7 +19,7 @@ class Update extends React.Component {
             }
 
         // Binding
-        this.onSubmitAdd = this.onSubmitAdd.bind(this)
+        this.onSubmitUpdate = this.onSubmitUpdate.bind(this)
         this.onChangeId = this.onChangeId.bind(this)
         this.onChangeNom = this.onChangeNom.bind(this)
         this.onChangePrenom = this.onChangePrenom.bind(this)
@@ -65,7 +65,7 @@ class Update extends React.Component {
         })
     }
 
-    onSubmitAdd(e) {
+    onSubmitUpdate(e) {
         const url = 'http://localhost:5000/profil/update/' + this.state.id;
         axios.post( url, {
             
@@ -87,7 +87,7 @@ class Update extends React.Component {
     render() {
         return (
 
-            <form onSubmit={this.onSubmitAdd}>
+            <form onSubmit={this.onSubmitUpdate}>
                 <div className="form-group">
                     <label> Id à modifier </label>
                     <input type="text" required className="form-control" value={this.state.Id} onChange={this.onChangeId} />
