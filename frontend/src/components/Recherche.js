@@ -27,8 +27,7 @@ class Rechercher extends React.Component {
 
     onSubmitFind(e) {
         const url = 'http://localhost:5000/profil/' + this.state.id;
-        axios.get( url, {
-          })
+        axios.get(url)
           .then(function (response) {
             console.log(response);
           })
