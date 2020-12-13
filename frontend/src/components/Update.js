@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 
 
-class Ajouter extends React.Component {
+class Update extends React.Component {
 
     /// Constructeur
     constructor(props) {
@@ -89,6 +89,9 @@ class Ajouter extends React.Component {
 
             <form onSubmit={this.onSubmitAdd}>
                 <div className="form-group">
+                    <label> Id à modifier </label>
+                    <input type="text" required className="form-control" value={this.state.Id} onChange={this.onChangeId} />
+                    <div className="col-md" style={{ backgroundColor: "black" , marginTop : "3%"} }></div>
                     <label> nom </label>
                     <input type="text" required className="form-control" value={this.state.nom} onChange={this.onChangeNom} />
                     <label> prenom </label>
@@ -106,4 +109,4 @@ class Ajouter extends React.Component {
         );
     }
 }
-export default Ajouter;
+export default Update;

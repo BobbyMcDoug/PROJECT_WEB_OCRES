@@ -9,6 +9,7 @@ import Admin from "./components/Admin";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Supprimer from "./components/Supprimer";
 import Ajouter from "./components/Ajouter";
+import Update from "./components/Update";
 
 
 
@@ -36,6 +37,7 @@ class App extends Component {
       <Route path="/Admin" component={Admin}/>
       <Route path="/Supprimer" component={Supprimer}/>
       <Route path="/Ajouter" component={Ajouter}/>
+      <Route path="/Update" component={Update}/>
       </div>
  
 </Router>
