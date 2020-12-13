@@ -26,7 +26,7 @@ function RadarChart() {
     const options = {
         title: {
             display: true,
-            text: 'Radar Chart'
+            text: 'Modification du budget crise covid'
         },
         scale: {
             angleLines: {

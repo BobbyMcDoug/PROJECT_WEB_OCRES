@@ -23,7 +23,7 @@ function DoughnutChart() {
     const options = {
         title: {
             display: true,
-            text: 'Doughnut Chart'
+            text: 'Visuel ventes par catégorie de produit'
         }
     }
     return (
