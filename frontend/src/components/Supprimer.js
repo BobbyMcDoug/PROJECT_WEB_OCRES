@@ -10,7 +10,7 @@ class Supprimer extends React.Component {
 
         /// this.state attributes
         this.state = {  
-        id:0,
+        id:'',
         };
         // Binding
         this.onSubmitDelete = this.onSubmitDelete.bind(this)
