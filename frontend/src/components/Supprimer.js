@@ -52,7 +52,9 @@ class Supprimer extends React.Component {
                     />
                 </div>
                 <a><input type="submit" value="Supprimer" className="btn btn-danger btn-block" ></input></a>
+                
             </form>
+
 
         );
     }
