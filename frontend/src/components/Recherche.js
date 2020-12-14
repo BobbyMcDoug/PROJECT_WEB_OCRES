@@ -10,13 +10,15 @@ class Rechercher extends React.Component {
 
         /// this.state attributes
         this.state = {
-            id:''
+            id:'',
+            collection: [{}]
             }
 
         // Binding
         this.onSubmitFind = this.onSubmitFind.bind(this)
         this.onChangeId = this.onChangeId.bind(this)
     }
+
 
     onChangeId(e)
     {
@@ -29,12 +31,14 @@ class Rechercher extends React.Component {
         const url = 'http://localhost:5000/profil/' + this.state.id;
         axios.get(url)
           .then(function (response) {
+              this.setState({
+                  collection: response.data
+              })
             console.log(response);
           })
           .catch(function (error) {
             console.log(error);
           });
-
     }
     render() {
         return (
