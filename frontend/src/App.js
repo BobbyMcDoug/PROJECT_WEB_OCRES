@@ -11,6 +11,7 @@ import Supprimer from "./components/Supprimer";
 import Ajouter from "./components/Ajouter";
 import Update from "./components/Update";
 import Rechercher from "./components/Rechercher";
+import Sales from "./components/Sales";
 
 
 
@@ -40,6 +41,7 @@ class App extends Component {
       <Route path="/Ajouter" component={Ajouter}/>
       <Route path="/Update" component={Update}/>
       <Route path="/Rechercher" component={Rechercher}/>
+      <Route path="/Sales" exact component={Sales} />
       </div>
  
 </Router>

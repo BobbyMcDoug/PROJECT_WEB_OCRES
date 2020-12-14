@@ -30,11 +30,11 @@ class Rechercher extends React.Component {
     onSubmitFind(e) {
         const url = 'http://localhost:5000/profil/' + this.state.id;
         axios.get(url)
-          .then(function (response) {
+          .then(response => {
               this.setState({
                   collection: response.data
               })
-            console.log(response);
+            console.log(this.state.collection);
           })
           .catch(function (error) {
             console.log(error);
@@ -42,6 +42,8 @@ class Rechercher extends React.Component {
           
     }
     render() {
+        const {collection} = this.state;
+
         return (
 
             
@@ -60,7 +62,7 @@ class Rechercher extends React.Component {
                 <img  src={this.state.collection[0].photo_prof} style={{height : "100%", width :"30%"}}></img>
                 <p>Prenom : {this.state.collection[0].prenom}</p>
                 <p>Nom : {this.state.collection[0].nom}</p>
-                <p>Date de Naissance : {this.state.collection[0].date_naiss}</p>
+                <p>Date de Naissance : {collection[0].date_naiss}</p>
                 </div>
             </form>
 
