@@ -10,6 +10,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Supprimer from "./components/Supprimer";
 import Ajouter from "./components/Ajouter";
 import Update from "./components/Update";
+import Rechercher from "./components/Rechercher";
 
 
 
@@ -38,6 +39,7 @@ class App extends Component {
       <Route path="/Supprimer" component={Supprimer}/>
       <Route path="/Ajouter" component={Ajouter}/>
       <Route path="/Update" component={Update}/>
+      <Route path="/Rechercher" component={Rechercher}/>
       </div>
  
 </Router>

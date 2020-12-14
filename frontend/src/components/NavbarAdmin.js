@@ -13,7 +13,7 @@ export default class NavbarAdmin extends Component {
           <Link to="/Ajouter" className="nav-link">Creation</Link>
           </li>
           <li className="navbar-item">
-          <Link to="/admin" className="nav-link">Recherche</Link>
+          <Link to="/Rechercher" className="nav-link">Recherche</Link>
           </li>
           <li className="navbar-item">
           <Link to="/Supprimer" className="nav-link">Suppression</Link>

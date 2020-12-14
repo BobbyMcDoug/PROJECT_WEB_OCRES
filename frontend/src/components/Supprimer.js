@@ -43,7 +43,7 @@ class Supprimer extends React.Component {
 
             <form onSubmit={this.onSubmitDelete}>
                 <div className="form-group">
-                    <label> _id </label>
+                    <label> Entrez l'id du profil à supprimer </label>
                     <input type="text"
                         required
                         className="form-control"
@@ -51,7 +51,7 @@ class Supprimer extends React.Component {
                         onChange={this.onChangeId}
                     />
                 </div>
-                <a><input type="submit" value="Supp" className="btn btn-danger btn-block" ></input></a>
+                <a><input type="submit" value="Supprimer" className="btn btn-danger btn-block" ></input></a>
             </form>
 
         );

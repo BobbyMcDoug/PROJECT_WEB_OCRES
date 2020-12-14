@@ -41,7 +41,7 @@ class Rechercher extends React.Component {
 
             <form onSubmit={this.onSubmitFind}>
                 <div className="form-group">
-                    <label> _id </label>
+                    <label> Choisissez l'id à rechercher  </label>
                     <input type="text"
                         required
                         className="form-control"
