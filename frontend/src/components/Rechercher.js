@@ -39,10 +39,12 @@ class Rechercher extends React.Component {
           .catch(function (error) {
             console.log(error);
           });
+          
     }
     render() {
         return (
 
+            
             <form onSubmit={this.onSubmitFind}>
                 <div className="form-group">
                     <label> Choisissez l'id à rechercher  </label>
@@ -54,7 +56,17 @@ class Rechercher extends React.Component {
                     />
                 </div>
                 <a><input type="submit" value="Trouver" className="btn btn-danger btn-block" ></input></a>
+                <div class="container-fluid">
+                <img  src={this.state.collection[0].photo_prof} style={{height : "100%", width :"30%"}}></img>
+                <p>Prenom : {this.state.collection[0].prenom}</p>
+                <p>Nom : {this.state.collection[0].nom}</p>
+                <p>Date de Naissance : {this.state.collection[0].date_naiss}</p>
+                </div>
             </form>
+
+
+            
+
 
         );
     }
